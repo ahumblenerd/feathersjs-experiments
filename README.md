@@ -21,3 +21,22 @@ npm install @feathersjs/socketio @feathersjs/express --save
 npm install @feathersjs/cli -g
 ```
 
+
+## Create user
+```
+curl 'http://localhost:3030/users/' \
+  -H 'Content-Type: application/json' \
+  --data-binary '{ "email": "hello@feathersjs.com", "password": "supersecret" }'
+
+```
+
+## Get token 
+
+```
+curl 'http://localhost:3030/authentication/' \
+  -H 'Content-Type: application/json' \
+  --data-binary '{ "strategy": "local", "email": "hello@feathersjs.com", "password": "supersecret" }'
+
+
+```
+
