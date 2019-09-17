@@ -13,6 +13,11 @@ npm init --yes
 # Also initialize a TS configuration file that uses modern JavaScript
 tsc --init --target es2018
 
-Install npm install @feathersjs/feathers --save
+# Install
+npm install @feathersjs/feathers --save
 npm install @feathersjs/socketio @feathersjs/express --save
+
+# Install cli 
+npm install @feathersjs/cli -g
 ```
+
